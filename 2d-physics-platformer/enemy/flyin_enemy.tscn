@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://4k0dmndbgxlp"]
+
+[ext_resource type="Script" uid="uid://2dysq54tttfy" path="res://flyin_enemy.gd" id="1_0gd56"]
+[ext_resource type="Texture2D" uid="uid://dko3fvhutjl8r" path="res://demon.png" id="2_p1uao"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y020y"]
+radius = 69.97
+
+[node name="FlyinEnemy" type="CharacterBody2D" unique_id=425789988]
+script = ExtResource("1_0gd56")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=721058807]
+position = Vector2(10.720936, -18.500004)
+scale = Vector2(0.1196013, 0.10827465)
+texture = ExtResource("2_p1uao")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=989078339]
+position = Vector2(10, -18)
+shape = SubResource("CircleShape2D_y020y")
+
+[node name="RayCastLeft" type="RayCast2D" parent="." unique_id=1291624802]
+position = Vector2(-10, -21)
+target_position = Vector2(-106, -1)
+
+[node name="RayCastRight" type="RayCast2D" parent="." unique_id=1733838341]
+position = Vector2(16, -21)
+target_position = Vector2(141, 2)
