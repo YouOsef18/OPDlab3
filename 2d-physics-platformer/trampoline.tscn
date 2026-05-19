@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bcv5s4hk78ok4"]
+
+[ext_resource type="Script" uid="uid://c4pkoupbw78ac" path="res://trampoline.gd" id="1_cilbb"]
+[ext_resource type="Texture2D" uid="uid://8qwmleevb0x7" path="res://enemy/Trampoline.png" id="1_d0j4r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cilbb"]
+size = Vector2(827, 226)
+
+[node name="Trampoline" type="Area2D" unique_id=499473320]
+script = ExtResource("1_cilbb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1739944450]
+position = Vector2(31.01409, -24.874987)
+scale = Vector2(0.5187647, 0.52793425)
+texture = ExtResource("1_d0j4r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=636069971]
+position = Vector2(44.5, -143)
+shape = SubResource("RectangleShape2D_cilbb")
