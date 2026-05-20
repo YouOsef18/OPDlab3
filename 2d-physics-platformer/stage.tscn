@@ -9,8 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://daqqtote00syu" path="res://enemy/enemy.tscn" id="7"]
 [ext_resource type="PackedScene" uid="uid://csdn3dwkaprow" path="res://background/parallax_bg.tscn" id="8"]
 [ext_resource type="AudioStream" uid="uid://gunv00cij80t" path="res://audio/music.ogg" id="9"]
-[ext_resource type="PackedScene" uid="uid://4k0dmndbgxlp" path="res://enemy/flyin_enemy.tscn" id="9_i76fu"]
-[ext_resource type="PackedScene" uid="uid://bcv5s4hk78ok4" path="res://trampoline.tscn" id="10_g8oy1"]
 
 [sub_resource type="Animation" id="Animation_oxal6"]
 length = 0.001
@@ -268,26 +266,6 @@ position = Vector2(2086.38, 270.529)
 
 [node name="Props" type="Node2D" parent="." unique_id=247349508]
 
-[node name="Trampoline" parent="Props" unique_id=499473320 instance=ExtResource("10_g8oy1")]
-position = Vector2(99, 443.99997)
-scale = Vector2(0.04226637, 0.10006949)
-
-[node name="Trampoline2" parent="Props" unique_id=833998218 instance=ExtResource("10_g8oy1")]
-position = Vector2(250, 372)
-scale = Vector2(0.04226637, 0.10006949)
-
-[node name="Trampoline3" parent="Props" unique_id=1727799218 instance=ExtResource("10_g8oy1")]
-position = Vector2(1002.00006, 622)
-scale = Vector2(0.04226637, 0.10006949)
-
-[node name="Trampoline4" parent="Props" unique_id=107669010 instance=ExtResource("10_g8oy1")]
-position = Vector2(2211, 306.99997)
-scale = Vector2(0.04226637, 0.10006949)
-
-[node name="Trampoline5" parent="Props" unique_id=1846236458 instance=ExtResource("10_g8oy1")]
-position = Vector2(2067, 202)
-scale = Vector2(0.04226637, 0.10006949)
-
 [node name="MovingPlatform1" parent="Props" unique_id=643722469 instance=ExtResource("3")]
 position = Vector2(725, 439)
 
@@ -318,9 +296,6 @@ position = Vector2(1201.4, 424.76)
 
 [node name="OneWayPlatform" parent="Props" unique_id=218796448 instance=ExtResource("5")]
 position = Vector2(465, 560.405)
-
-[node name="Platform3" parent="Props" unique_id=691944474 instance=ExtResource("3")]
-position = Vector2(2205, 138)
 
 [node name="Player" parent="." unique_id=196749603 instance=ExtResource("6_fauva")]
 position = Vector2(126, 501)
@@ -370,28 +345,6 @@ physics_material_override = SubResource("11")
 [node name="Enemy11" parent="Enemies" unique_id=1211282787 instance=ExtResource("7")]
 position = Vector2(1203.31, 407.557)
 physics_material_override = SubResource("12")
-
-[node name="FlyinEnemy" parent="Enemies" unique_id=425789988 instance=ExtResource("9_i76fu")]
-position = Vector2(169, 191)
-scale = Vector2(0.24959984, 0.2912004)
-
-[node name="FlyinEnemy2" parent="Enemies" unique_id=901257970 instance=ExtResource("9_i76fu")]
-position = Vector2(776, 297)
-scale = Vector2(0.24959984, 0.2912004)
-
-[node name="FlyinEnemy3" parent="Enemies" unique_id=376431448 instance=ExtResource("9_i76fu")]
-position = Vector2(416.00003, 411.00003)
-scale = Vector2(0.24959984, 0.2912004)
-
-[node name="FlyinEnemy4" parent="Enemies" unique_id=1901555185 instance=ExtResource("9_i76fu")]
-position = Vector2(929.00006, 518)
-scale = Vector2(0.24959984, 0.2912004)
-speed = 149.98
-
-[node name="FlyinEnemy5" parent="Enemies" unique_id=976098570 instance=ExtResource("9_i76fu")]
-position = Vector2(1686.0001, 651)
-scale = Vector2(0.79073405, 0.6470141)
-speed = 300.0
 
 [node name="ParallaxBg" parent="." unique_id=15119570 instance=ExtResource("8")]
 
