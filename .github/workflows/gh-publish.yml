@@ -29,4 +29,5 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           generateReleaseNotes: true
           tag: ${{ github.ref_name }}
+          allowUpdates: true # <--- Добавил эту строчку(Она обновляет релиз, даже если он уже существует)
           artifacts: ${{ steps.export.outputs.archive_directory }}/*
